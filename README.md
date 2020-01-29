@@ -5,7 +5,9 @@
 ### Key Files
 
 CustomKeys-Sample.txt - Default keybindings
+
 CustomKeys-QWERTY-Grid.txt - Grid layout for QWERTY keyboards
+
 CustomKeys-Dvorak-Grid.txt - Grid layout for Dvorak keyboards
 
 ### Instructions
