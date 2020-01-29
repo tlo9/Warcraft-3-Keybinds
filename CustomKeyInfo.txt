@@ -1,0 +1,99 @@
+
+WARCRAFT III KEYBOARD SHORTCUTS AND TOOLTIP CUSTOMIZATION
+---------------------------------------------------------
+
+Customization of command keyboard shortcuts can be accomplished by creating a file called "CustomKeys.txt" in your Warcraft III user data under CustomKeyBindings eg. C:\Users\JohnSmith\Documents\Warcraft III\CustomKeyBindings\CustomKeys.txt. Entries in this file will override the existing default shortcuts. Additionally this file can be used to override default tooltips. The only utility required to create this custom file is a simple text editor such as Notepad. Once a customization file has been created in the installed folder, the gameplay option "Custom Keys" must be set to 'ON' in order for Warcraft III to actually use the data in the custom file.
+
+PLEASE NOTE: Blizzard Entertainment will not provide technical support for problems associated with data contained in "CustomKeys.txt." Blizzard Entertainment will not provide support related to using "CustomKeys.txt." Add entries to "CustomKeys.txt" at you own risk. Blizzard Entertainment will not and does not provide support or endorse the use of any 3rd party utilities to populate or modify entries in "CustomKeys.txt." Blizzard does not recommend the use of 3rd party utilities to populate or modify "CustomKeys.txt." The use of 3rd party utilities to populate or modify "CustomKeys.txt" is at your own risk.
+
+
+CUSTOMIZATION OF HOTKEYS
+------------------------
+
+In all, data for the following keyboard shortcut entries can be customized:
+ - Hotkey
+ - Unhotkey
+ - Researchhotkey
+
+The entry for a custom key must be uppercase. A sample entry in "CustomKeysSample.txt" to customize the keyboard shortcut to train an Orc Grunt as 'T' would look like:
+
+[ogru]
+Hotkey=T
+
+Certain actions have a series of hotkeys associated with the action. (For example, a melee weapon upgrade might have 3 levels of upgrade, thus facilities for 3 unique hotkeys for each level.) A sample entry to customize the keys to 'X', 'Y', and 'Z' respectively for each level of the Human melee weapon upgrade would look like:
+
+[Rhme]
+Hotkey=X,Y,Z
+
+Other actions have distinct hotkeys for activation and deactivation. (For example, the footman ability Defend.) A sample entry to change the activate/deactivate hotkeys to 'A' and 'B' respectively for the footman's defend ability would look like:
+
+[Adef]
+Hotkey=A
+Unhotkey=B
+
+The hotkey for a hero to learn an ability is indicated in an entry called "Researchhotkey". A sample entry to change the hotkey to 'U' for learning the Paladin ability resurrection would look like:
+
+[AHre]
+Researchhotkey=U
+
+Note that if the same key is assigned to multiple actions on a single unit, while Warcraft III will still run fine, the result of using that key is not defined, and only one of the actions will work. Also note that many abilities are used with multiple units, so while a key conflict may not exist with one unit, it may on another.
+
+
+CUSTOMIZATION OF BUTTON POSITIONS
+---------------------------------
+
+The following button position entries can be customized:
+ - Buttonpos
+ - Unbuttonpos
+ - Researchbuttonpos
+
+The locations of buttons in a unit's command card can be customized as well. The position is define by an x,y where x=0 is the leftmost button column, x=3 is the rightmost button column, y=0 is the topmost button row, and y=2 is the bottommost button row. A sample entry to position the button to train a grunt in the middle row in the rightmost column would look like:
+
+[ogru]
+Buttonpos=3,1
+
+Note that if more than one button is placed at the same location on a single unit that Warcraft III will attempt to reposition one of the conflicting buttons, but the priority for repositioning is undefined. Also not that if Warcraft III is unable to reposition a button that button will not appear in the command panel, rendering that ability unusable. Also note that many abilities are used with multiple units, so while a position conflict may not exist with one unit, it may on another. Change button positions at your own risk.
+
+
+CUSTOMIZATION OF TOOL TIPS
+--------------------------
+
+If desired, tooltips can be customized to match customized keyboard shortcuts. In all, tooltip data for the following tip entries can be customized:
+ - Tip
+ - Untip
+ - Researchtip
+ - Revivetip (tip for reviving heroes at altars)
+ - Awakentip (tip for reviving heroes at the tavern)
+
+Additional tooltip entries to match the above keyboard entries would look like the following:
+
+[ogru]
+Hotkey=T
+Tip=Train Orc Grunt (T)
+
+[Rhme]
+Hotkey=X,Y,Z
+Tip=Upgrade to Iron Forged swords (X),Upgrade to Steel Forged Swords (Y),Upgrade to Mithril Forged Swords (Z)
+
+[Adef]
+Hotkey=A
+Unhotkey=B
+Tip=Defend (A)
+Untip=Stop Defend (B)
+
+[AHre]
+Researchhotkey=U
+Researchtip=Learn Resurrection (U)
+
+
+COLOR CODING OF CHARACTERS IN A TOOLTIP
+---------------------------------------
+
+Individual characters or blocks of characters can be customized to display in contrasting colors. This is accomplished via "escape sequences" embedded into the text. The escape sequence format is "|cARGB" where ARGB are hexadecimal values for alpha, red, green, and blue. The escape sequence to revert to the previous color is "|r". So to highlight the hotkey in yellow for one of the above tooltips, the entry would look like:
+
+[ogru]
+Hotkey=T
+Tip=Train Orc Grunt (|cffffcc00T|r)
+
+
+Have fun tailoring the hotkeys and tooltips of Warcraft III to your style of play!
