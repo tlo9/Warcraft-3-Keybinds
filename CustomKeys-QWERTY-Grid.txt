@@ -736,8 +736,11 @@ Hotkey=X
 Buttonpos=1,2
 
 [Otch]
-Tip=Earthshaker
-Buttonpos=3,0
+Tip=(|cffffcc00C|r) Summon Tauren Chieftain
+Revivetip=(|cffffcc00C|r) Revive Tauren Chieftain
+Awakentip=(|cffffcc00C|r) Awaken Tauren Chieftain
+Hotkey=C
+Buttonpos=2,2
 
 [ogru]
 Tip=(|cffffcc00Q|r) Train Grunt
